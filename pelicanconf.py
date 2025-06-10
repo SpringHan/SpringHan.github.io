@@ -1,5 +1,5 @@
 AUTHOR = 'SpringHan'
-SITENAME = "SpringHan's Blog"
+SITENAME = "SpringHan Blog"
 SITEURL = ""
 
 PATH = "content"
@@ -25,6 +25,9 @@ LINKS = (
 SOCIAL = ()
 
 DEFAULT_PAGINATION = 10
+
+# Theme settings
+PROFILE_IMAGE = "avatar.png"
 
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
