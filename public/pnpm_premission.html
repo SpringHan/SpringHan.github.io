@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arch系下 pnpm 使用时的权限事项 · SpringHan&#39;s Blog</title>
+    <meta name="description" content="最近在使用 dsh 准备安装插件的时候，发现插件的安装刚需pnpm，我用 pacman 安装了之后运行安装命令后又发现出现了权限相关的错误。问过 AI 后，发现问题出在 pacman 安装了 pnpm 后，所有用户的全局包存储的文件权限都被 root 用户所持有。">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assets/logo.png">
+</head>
+<body>
+    <a class="skip-link" href="#main">跳到主内容</a>
+    <header class="site-header">
+        <div class="wrap header-inner">
+            <a class="site-title" href="index.html">SpringHan&#39;s Blog</a>
+            <nav class="site-nav" aria-label="站点导航">
+                <a href="index.html">首页</a>
+                <a href="tags/index.html">标签</a>
+            </nav>
+        </div>
+    </header>
+    <main id="main" class="wrap">
+    <article class="post">
+      <header class="post-header">
+        <h1 class="post-title">Arch系下 pnpm 使用时的权限事项</h1>
+      <p class="post-meta"><time datetime="2026-10-04T23:55:00">2026-10-04 23:55</time><span class="dot">·</span><span class="tag-list"><a class="tag" href="tags/linux.html">linux</a><a class="tag" href="tags/nodejs.html">nodejs</a></span></p>
+      </header>
+      <div class="post-content">
+<p>最近在使用 dsh 准备安装插件的时候，发现插件的安装刚需<code>pnpm</code>，我用 pacman 安装了之后运行安装命令后又发现出现了权限相关的错误。问过 AI 后，发现问题出在 pacman 安装了 pnpm 后，所有用户的全局包存储的文件权限都被 root 用户所持有。</p>
+<p>最后的解决方案是使用<code>chown</code>命令将权限重新分配给当前用户。</p>
+
+      </div>
+    </article>
+    </main>
+    <footer class="site-footer">
+        <div class="wrap footer-inner">
+            <span>SpringHan</span><span class="dot">·</span>
+        </div>
+    </footer>
+</body>
+</html>
